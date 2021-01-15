@@ -14,4 +14,4 @@ jobs:
     - name: configure
       run: ./configure
     - name: make
-      run: make run_tests
+      run: docker make run_tests
