@@ -2,6 +2,6 @@ version: "3.8"
 services:
     tests:
         build:
-            context: .
-            dockerfile: dockerfile
+            context: ../../
+            dockerfile: .github/.ci/dockerfile
         container_name: tests
