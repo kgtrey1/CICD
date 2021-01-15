@@ -21,7 +21,7 @@ Priest::Priest(const std::string &name, int level) : Character(name, level), Mag
 Priest::~Priest(void)
 {
 
-}z
+}
 
 int Priest::CloseAttack(void)
 {
