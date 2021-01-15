@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: make
+    - name: Pulling docker image 'epitechcontent/epitest-docker:latest'
+      run: docker pull epitechcontent/epitest-docker:latest
+    - name: Executing all tests
       run: cd .github/.ci/ && docker-compose up --exit-code-from tests

@@ -1,4 +1,4 @@
-FROM epitechcontent/epitest-docker
+FROM epitechcontent/epitest-docker:latest
 
 LABEL maintainer="kgtrey1"
 
@@ -6,4 +6,4 @@ COPY ./ /tests
 
 WORKDIR /tests
 
-CMD ["/bin/sh", "-c", "(make tests_run && echo $? && gcovr --exclude test  && exit 0) || exit 1"]
+CMD ["/bin/sh", "-c", "(make tests_run && echo $? && gcovr --exclude test c$* && exit 0) || exit 1"]
