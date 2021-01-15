@@ -1,7 +1,6 @@
 version: "3.8"
 services:
     tests:
-        image: api
         build:
             context: .
             dockerfile: dockerfile
