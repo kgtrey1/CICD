@@ -10,7 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
     - name: make
-      run: docker compose up
+      run: docker make run_tests
