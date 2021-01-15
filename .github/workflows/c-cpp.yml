@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: cd .github/.ci/ && docker-compose up
+      run: cd .github/.ci/ && docker-compose up --exit-code-from tests
