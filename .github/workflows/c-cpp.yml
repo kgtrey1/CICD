@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: docker make run_tests
+      run: docker compose up
