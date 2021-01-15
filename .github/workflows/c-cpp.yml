@@ -8,10 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: epitechcontent/epitest-docker:latest
     steps:
     - uses: actions/checkout@v2
     - name: configure
       run: ./configure
     - name: make
-      run: docker make run_tests
+      run: docker compose up
