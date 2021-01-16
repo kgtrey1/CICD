@@ -18,7 +18,7 @@ Warrior::Warrior(const std::string &name, int level) : Character(name, level)
     this->_agility = 7;
     std::cout << "I'm " << name << " KKKKKKKKKKRRRRRRRRRRRRRREEEEEEEEOOOOOOORRRRGGGGGGG" << std::endl;
 }
-
+zz
 Warrior::~Warrior(void) {}
 
 int Warrior::CloseAttack(void)
