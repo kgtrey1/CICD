@@ -1,4 +1,11 @@
-name: C/C++ CI
+##
+## EPITECH PROJECT, 2021
+## C/C++ CI/CD Workflow for github
+## File description:
+## Workflow.
+##
+
+name: C/C++ Epitech CI/CD
 
 on:
   push:

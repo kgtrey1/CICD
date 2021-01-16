@@ -1,3 +1,10 @@
+##
+## EPITECH PROJECT, 2021
+## C/C++ CI/CD Workflow for github
+## File description:
+## docker-compose for launching tests
+##
+
 version: "3.8"
 services:
     tests:

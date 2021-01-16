@@ -1,4 +1,11 @@
-FROM epitechcontent/epitest-docker:latest
+##
+## EPITECH PROJECT, 2021
+## C/C++ CI/CD Workflow for github
+## File description:
+## dockerfile for tests.
+##
+
+FROM epitechcontent/epitest-docker
 
 LABEL maintainer="kgtrey1"
 
@@ -6,4 +13,4 @@ COPY ./ /tests
 
 WORKDIR /tests
 
-CMD ["/bin/sh", "-c", "(make tests_run && echo $? && gcovr --exclude test c$* && exit 0) || exit 1"]
+CMD ["/bin/sh", "-c", "(make tests_run && echo $? && gcovr --exclude test && exit 0) || exit 1"]
