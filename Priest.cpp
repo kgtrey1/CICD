@@ -15,7 +15,7 @@ Priest::Priest(const std::string &name, int level) : Character(name, level), Mag
     this->_intel = 42;
     this->_spirit = 21;
     this->_agility = 2;
-    std::cout << this->_name << " enters in the order" << std::endl;
+    std::cout << this->_name << " enters in the ordesr" << std::endl;
 }
 
 Priest::~Priest(void)
