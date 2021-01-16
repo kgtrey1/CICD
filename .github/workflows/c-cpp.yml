@@ -21,5 +21,3 @@ jobs:
       run: docker pull epitechcontent/epitest-docker:latest
     - name: Executing all tests
       run: cd .github/.ci/ && docker-compose up --exit-code-from tests
-  publish:
-    needs: build
