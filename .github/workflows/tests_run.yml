@@ -1,0 +1,33 @@
+##
+## EPITECH PROJECT, 2021
+## C/C++ CI/CD Workflow for github
+## File description:
+## Workflow.
+##
+
+name: C/C++ Epitech CI/CD
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    #- name: Pulling docker image 'epitechcontent/epitest-docker:latest'
+    #  run: docker pull epitechcontent/epitest-docker:latest
+    #- name: Executing all tests
+    #  run: cd .github/ci/ && docker-compose up --exit-code-from tests
+  onSuccess:
+    if: success()
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send success notification on discord
+      env:
+        DISCORD_WEBHOOK: https://discord.com/api/webhooks/799931309002588170/Ta4qaDGQ00whByWKi5nQvO8Nrlf_lUPiY1LI8Y8DDXOefz9FxvkwoAoyEBKPsRv9Egq-
+        DISCORD_EMBED: '["title": "Hello", "description": "world"]'
+      uses: Ilshidur/action-discord@0.3.0

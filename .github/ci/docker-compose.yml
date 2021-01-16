@@ -10,5 +10,5 @@ services:
     tests:
         build:
             context: ../../
-            dockerfile: .github/.ci/dockerfile
+            dockerfile: .github/ci/dockerfile
         container_name: tests
