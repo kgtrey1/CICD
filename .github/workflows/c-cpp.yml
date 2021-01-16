@@ -24,6 +24,7 @@ jobs:
   onSuccess:
     if: success()
     needs: build
+    runs-on: ubuntu-latest
     steps:
     - name: Send success notification on discord
       env:
