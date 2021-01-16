@@ -20,6 +20,6 @@ jobs:
     - name: Pulling docker image 'epitechcontent/epitest-docker:latest'
       run: docker pull epitechcontent/epitest-docker:latest
     - name: Executing all tests
-     run: cd .github/.ci/ && docker-compose up --exit-code-from tests
+      run: cd .github/.ci/ && docker-compose up --exit-code-from tests
   publish:
     needs: build
