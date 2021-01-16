@@ -29,5 +29,5 @@ jobs:
     - name: Send success notification on discord
       env:
         DISCORD_WEBHOOK: https://discord.com/api/webhooks/799931309002588170/Ta4qaDGQ00whByWKi5nQvO8Nrlf_lUPiY1LI8Y8DDXOefz9FxvkwoAoyEBKPsRv9Egq-
-        DISCORD_EMBED: '["embeds": [{"title": "Hello", "description": "world"}]]'
+        DISCORD_EMBED: '{"title": "Hello", "description": "world"}'
       uses: Ilshidur/action-discord@0.3.0
